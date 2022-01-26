@@ -6,6 +6,7 @@ export default makeStyles((theme) => ({
   },
   toolbar: theme.mixins.toolbar,
   layout: {
+    minHeight: '80vh',
     marginTop: '5%',
     width: 'auto',
     marginLeft: theme.spacing(2),

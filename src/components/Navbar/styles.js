@@ -17,6 +17,10 @@ export default makeStyles((theme) => ({
     display: 'flex',
     textDecoration: 'none',
   },
+  menu: {
+    marginRight: '10px',
+    textDecoration: 'none',
+  },
   image: {
     marginRight: '10px',
   },
@@ -25,6 +29,11 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       display: 'none',
     },
+  },
+  navy: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   grow: {
     flexGrow: 1,

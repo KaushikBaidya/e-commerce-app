@@ -70,7 +70,7 @@ const Cart = ({
   if (!cart.line_items) return 'Loading...'
 
   return (
-    <Container>
+    <Container className={classes.main}>
       <div className={classes.toolbar} />
       <Typography className={classes.title} variant="h3" gutterBottom>
         Your Shopping Cart

@@ -5,6 +5,7 @@ import Products from './components/Products/Products'
 import Checkout from './components/Checkout/Checkout'
 import { commerce } from './lib/commerce'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [products, setProducts] = useState([])
@@ -107,6 +108,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </div>
     </Router>
   )

@@ -37,7 +37,26 @@ const Navbar = ({ totalItems }) => {
             />
             E-Commerce-App
           </Typography>
-          <div className={classes.grow} />
+          <Typography
+            className={classes.menu}
+            variant="subtitle1"
+            color="inherit"
+            component={Link}
+            to="/about"
+          >
+            About
+          </Typography>
+          <Typography
+            className={classes.menu}
+            variant="subtitle1"
+            color="inherit"
+            component={Link}
+            to="/contact"
+          >
+            Contact
+          </Typography>
+          {/* <div className={classes.grow} /> */}
+
           {location.pathname === '/' && (
             <div className="classes.button">
               <IconButton
