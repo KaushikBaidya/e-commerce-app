@@ -10,13 +10,11 @@ const FormInput = ({ name, label, required }) => {
     <Grid item xs={12} sm={6}>
       <Controller
         render={({ field }) => (
-          <TextField {...field} name={name} label={label} />
+          <TextField {...field} label={label} required={required} />
         )}
-        // name={name}
-        // label={label}
+        name={name}
         control={control}
         fullWidth
-        required={required}
         error={isError}
       />
     </Grid>
