@@ -3,9 +3,11 @@ import Cart from './components/Cart/Cart'
 import Navbar from './components/Navbar/Navbar'
 import Products from './components/Products/Products'
 import Checkout from './components/Checkout/Checkout'
+import Footer from './components/Footer/Footer'
+import About from './components/About/About.jsx'
+
 import { commerce } from './lib/commerce'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Footer from './components/Footer/Footer'
 
 function App() {
   const [products, setProducts] = useState([])
@@ -82,6 +84,7 @@ function App() {
               <Products products={products} onAddToCart={handleAddToCart} />
             }
           />
+          <Route exact path="/about" element={<About />} />
 
           <Route
             exact
