@@ -2,7 +2,6 @@ import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import Product from './Product/Product'
 import useStyles from './styles'
-import Hero from '../Hero/Hero'
 
 const Products = ({ products, onAddToCart }) => {
   const classes = useStyles()
@@ -10,7 +9,6 @@ const Products = ({ products, onAddToCart }) => {
   return (
     <main className={classes.content}>
       <div className={classes.toolbar} />
-      <Hero />
       <Typography variant="h4" color="secondary">
         Our Products
         <hr />
